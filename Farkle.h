@@ -2,6 +2,7 @@
 #define FARKLE_H;
 
 #include "CircularLinkedList.h";
+#include "Game.h";
 #include "Dice.h";
 
 #include <vector>;
@@ -10,14 +11,16 @@
 
 using namespace std;
 
-class Farkle : public game { // inherit attributes and methods from base class game
+class Farkle : public Game { // inherit attributes and methods from base class game
 public:
+	Farkle(CircularLinkedList& playerList); // constructor
 	void startGame() override;  // overide is used to override the base class method
 	void takeTurn() override;
 	void displayRules() const override;
 	void displayScores() const override;
 	void displayFinalScores() const override;
 	void displayWinner() const override;
+	bool checkForWinner() const override;
 
 private:
 	CircularLinkedList& players; // pass by reference to avoid copying

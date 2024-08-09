@@ -11,6 +11,7 @@ public:
 	virtual void displayScores() const = 0;
 	virtual void displayFinalScores() const = 0;
 	virtual void displayWinner() const = 0;
+	virtual bool checkForWinner() const = 0;
 
 	virtual ~Game() = default;
 };

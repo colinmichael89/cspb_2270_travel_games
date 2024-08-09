@@ -12,6 +12,6 @@ public:
 private:
 	CircularLinkedList players;
 	Game* selectedGame;
-	void displayMenu const();
+	void displayMenu() const;
 };
 #endif // GameSelector.h
