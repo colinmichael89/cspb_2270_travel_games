@@ -5,13 +5,17 @@
 
 class GameSelector {
 public:
-	void selectGame();
-	void inputPlayers();
-	void startSelectedGame();
+    GameSelector(); // Constructor to initialize selectedGame
+    ~GameSelector(); // Destructor to clean up selectedGame
+
+    void selectGame();
+    void inputPlayers();
+    void startGame();
+    void displayMenu();
 
 private:
-	CircularLinkedList players;
-	Game* selectedGame;
-	void displayMenu() const;
+    CircularLinkedList players;
+    Game* selectedGame;
 };
-#endif // GameSelector.h
+
+#endif // GAMESELECTOR_H

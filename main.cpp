@@ -1,9 +1,9 @@
+#include "GameSelector.h"
 #include <iostream>
 
-using namespace std;
-
 int main() {
-	cout << "This is my final project for cspb 2270" << endl;
+    GameSelector gameSelector;
+    gameSelector.displayMenu();
 
-	return 0;
+    return 0;
 }

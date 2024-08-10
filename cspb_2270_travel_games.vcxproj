@@ -131,7 +131,13 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircularLinkedList.cpp" />
+    <ClCompile Include="Dice.cpp" />
+    <ClCompile Include="Farkle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameSelector.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircularLinkedList.h" />

@@ -2,13 +2,13 @@
 
 ## Project Overview
 
-This project implements the Farkle dice game using a combination of C++ classes and data structures. The game involves rolling dice, keeping certain dice, and scoring based on predefined rules. The project features a circular linked list to manage players and handle game rotations.
+This project implements the Farkle dice game using C++ classes and data structures. The game involves rolling dice, keeping certain dice, and scoring based on predefined rules. The project features a circular linked list to manage players and handle game rotations, with enhanced gameplay features for a more interactive experience.
 
 ## Data Structures Implemented
 
 1. **Circular Linked List:**
    - **Class:** `CircularLinkedList`
-   - **Description:** Manages a list of players in a circular fashion, allowing seamless rotation through the list. It supports operations such as adding players, moving to the next player, and checking if the list is empty.
+   - **Description:** Manages a list of players in a circular fashion, allowing seamless rotation through the list. Supports operations such as adding players, moving to the next player, and checking if the list is empty.
 
 2. **Node:**
    - **Class:** `Node`
@@ -30,8 +30,10 @@ This project implements the Farkle dice game using a combination of C++ classes 
 
 1. **Build the Project:**
    - Ensure you have a C++ compiler installed.
-   - Compile the project and run.
-
+   - Compile the project using a command such as `g++ -o farkle main.cpp`.
+	- If you are using a different compiler, adjust the command accordingly.
+	- If you are using an IDE, follow the instructions for building a C++ project. (I built this in VS)
+   
 2. **Execute the Program:**
    - Run the compiled executable: `./farkle`.
    - Follow the on-screen prompts to select the game, input player names, and start playing.
@@ -49,19 +51,22 @@ This project implements the Farkle dice game using a combination of C++ classes 
 
 4. **Gameplay:**
    - Roll dice, select which dice to keep, and score based on the game rules.
-   - The game continues until a player reaches or exceeds 10,000 points.
+   - If all dice are kept during a turn, the player’s score for that turn is added to their final score, and the turn restarts with a new roll.
+   - If not all dice are kept, the game rolls the remaining dice and calculates the score with all dice.
 
-5. **View Results:**
-   - After a player wins, final scores for all players are displayed.
+5. **End of Turn:**
+   - The turn ends when not all dice are kept after a roll. The total score for the turn is added to the player's final score, and the next player begins their turn.
+
+6. **View Results:**
+   - After a player wins (reaches or exceeds 10,000 points), final scores for all players are displayed.
 
 ## Project Features
 
 - **Circular Linked List:** Efficiently manages player rotation.
 - **Dice Rolling:** Simulates dice rolls with random results.
 - **Scoring:** Implements Farkle game rules for scoring.
-- **Player Management:** Tracks player scores and wins.
+- **Player Management:** Tracks player scores, wins, and handles turn-based gameplay.
 
 ## Contact
 
 For any questions or feedback, please reach out to [colinmichael89@example.com](mailto:colinmichael89@gmail.com).
-
