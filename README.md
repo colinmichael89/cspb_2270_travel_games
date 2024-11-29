@@ -66,7 +66,8 @@ This project implements the Farkle dice game using C++ classes and data structur
 - **Dice Rolling:** Simulates dice rolls with random results.
 - **Scoring:** Implements Farkle game rules for scoring.
 - **Player Management:** Tracks player scores, wins, and handles turn-based gameplay.
-
+"yjumgtrzdfxgykjol;'
+- "
 ## Contact
 
 For any questions or feedback, please reach out to [colinmichael89@example.com](mailto:colinmichael89@gmail.com).
